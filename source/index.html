@@ -6,6 +6,10 @@
   <title>Главная страница | Cat Energy - интернет-магазин</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -13,7 +17,11 @@
   <div class="container">
     <header class="page-header page-header--position container">
       <a class="page-header__logo" href="#" aria-label="Главная страница интернет-магазина Cat Energy">
-        <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" alt="Кэт энерджи" width="192" height="38">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" alt="Кэт энерджи" width="192" height="38">
+        </picture>
       </a>
 
       <nav class="menu-nav menu-nav-nojs">
@@ -43,7 +51,14 @@
     <section class="hero container">
       <h2 class="hero__heading">Функциональное питание для котов</h2>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy курица">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x">
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x">
+        <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy курица">
+      </picture>
       <a class="hero__button generic-button" href="form.html">Подобрать программу</a>
     </section>
 
@@ -56,10 +71,10 @@
         <a class="services__button" href="#">
           Каталог Slim
           <svg class="services__icon-right-arrow-long" width="25" height="12" viewBox="0 0 24.2 11">
-            <use href="img/sprite.svg#icon-right-arrow-long"></use>
+            <use href="images/sprite.svg#icon-right-arrow-long"></use>
           </svg>
           <svg class="services__icon-right-arrow-verylong" width="32" height="12" viewBox="0 0 32 11">
-            <use href="img/sprite.svg#icon-right-arrow-verylong"></use>
+            <use href="images/sprite.svg#icon-right-arrow-verylong"></use>
           </svg>
         </a>
       </article>
@@ -70,10 +85,10 @@
         <a class="services__button" href="#">
           Каталог Pro
           <svg class="services__icon-right-arrow-long" width="25" height="12" viewBox="0 0 24.2 11">
-            <use href="img/sprite.svg#icon-right-arrow-long"></use>
+            <use href="images/sprite.svg#icon-right-arrow-long"></use>
           </svg>
           <svg class="services__icon-right-arrow-verylong" width="32" height="11" viewBox="0 0 32 11">
-            <use href="img/sprite.svg#icon-right-arrow-verylong"></use>
+            <use href="images/sprite.svg#icon-right-arrow-verylong"></use>
           </svg>
         </a>
       </article>
@@ -86,7 +101,7 @@
         <li class="advantages__item">
           <div class="advantages__image">
             <svg width="30" height="32">
-              <use href="img/sprite.svg#icon-leaf"></use>
+              <use href="images/sprite.svg#icon-leaf"></use>
             </svg>
           </div>
           <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -95,7 +110,7 @@
         <li class="advantages__item">
           <div class="advantages__image">
             <svg width="29" height="31">
-              <use href="img/sprite.svg#icon-tub"></use>
+              <use href="images/sprite.svg#icon-tub"></use>
             </svg>
           </div>
           <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
@@ -105,7 +120,7 @@
         <li class="advantages__item">
           <div class="advantages__image">
             <svg width="23" height="30">
-              <use href="img/sprite.svg#icon-eat"></use>
+              <use href="images/sprite.svg#icon-eat"></use>
             </svg>
           </div>
           <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.
@@ -116,7 +131,7 @@
 
           <div class="advantages__image">
             <svg width="32" height="32">
-              <use href="img/sprite.svg#icon-alarm"></use>
+              <use href="images/sprite.svg#icon-alarm"></use>
             </svg>
           </div>
           <p class="advantages__description advantages__description--width">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
@@ -147,11 +162,17 @@
         <div class="sample__slider">
           <div class="sample__slider-cat">
             <div class="sample__slider-cat-before">
-              <img src="images/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до прохождения программы похудения">
+              <picture>
+                <source width="1380" height="1034" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x">
+                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="320" height="240" alt="Кот до прохождения программы похудения">
+              </picture>
             </div>
 
             <div class="sample__slider-cat-after slider-cat-displayed">
-              <img src="images/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после прохождения программы похудения">
+              <picture>
+                <source width="1380" height="1034" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x">
+                <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="320" height="240" alt="Кот после прохождения программы похудения">
+              </picture>
             </div>
           </div>
 
@@ -205,21 +226,21 @@
           <li>
             <a class="page-footer__menu-social-link" href="#" aria-label="Страница интернет-магазина Cat Energy в социальной сети ВКонтакте">
               <svg class="social-icon social-icon--vk" width="23" height="16">
-                <use href="img/sprite.svg#icon-vk"></use>
+                <use href="images/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="page-footer__menu-social-link" href="#" aria-label="Страница интернет-магазина Cat Energy в социальной сети Instagram">
               <svg class="social-icon social-icon--ig" width="16" height="16">
-                <use href="img/sprite.svg#icon-insta"></use>
+                <use href="images/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="page-footer__menu-social-link" href="#" aria-label="Страница интернет-магазина Cat Energy в социальной сети Facebook">
               <svg class="social-icon social-icon--fb" width="22" height="22">
-                <use href="img/sprite.svg#icon-fb"></use>
+                <use href="images/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
