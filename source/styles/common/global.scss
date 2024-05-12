@@ -1,6 +1,19 @@
+//Global
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
 body {
+  height: 100%;
   margin: 0;
-  font-family: $primary-font;
+  padding: 0;
+  background-color: $basic-white;
+  color: $basic-black;
+  font-family: $font-lato;
+  font-size: 14px;
 }
 
 img {
@@ -11,10 +24,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }

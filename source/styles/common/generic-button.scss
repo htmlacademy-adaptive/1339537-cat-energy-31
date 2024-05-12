@@ -1,0 +1,15 @@
+.generic-button {
+  display: flex;
+  justify-content: center;
+  padding: 12px 10px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+  }
+}

@@ -1,8 +1,8 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
-@import "./common/mixins.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/container.scss";
 @import "./common/generic-button.scss";
@@ -18,7 +18,12 @@
 @import "./blocks/sample.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/page-footer.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/social-icon.scss";
 @import "./blocks/products.scss";
 @import "./blocks/characteristic-table.scss";
 @import "./blocks/product-button.scss";
 @import "./blocks/additional-products.scss";
+@import "./blocks/form.scss";
