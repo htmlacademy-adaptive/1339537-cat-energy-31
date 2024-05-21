@@ -12,12 +12,12 @@
     grid-template-columns: 1.7fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 29px 33px 30px;
+    padding: 35px 29px 28px 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1.27fr 1fr 1fr;
-    padding: 30px 110px 46px;
+    padding: 30px 110px 38px;
   }
 }
 
@@ -47,7 +47,6 @@
   border-bottom: 1px solid $grey-lightest;
 
   @media (min-width: $tablet-width) {
-    padding-top: 13px;
     border: none;
   }
 
