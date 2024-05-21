@@ -1,8 +1,8 @@
 .services {
   display: grid;
   grid-template-rows: 1fr;
-  row-gap: 20px;
-  margin-bottom: 28px;
+  row-gap: 22px;
+  margin-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -27,11 +27,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 31px 20px 21px;
+  padding: 29px 20px 21px;
   background-color: $grey-dark;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 57px 53px;
+    padding: 77px 52px 58px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +44,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 15px;
-  padding-left: 71px;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -69,7 +69,7 @@
     content: "";
     position: absolute;
     top: -9px;
-    left: 9px;
+    left: 7px;
     z-index: 1;
     width: 36px;
     height: 50px;
@@ -82,7 +82,7 @@
     content: "";
     position: absolute;
     top: -6px;
-    left: 2px;
+    left: 0;
     width: 50px;
     height: 50px;
     background-color: $basic-green;
@@ -198,8 +198,8 @@
   border-bottom: 1px solid $grey-lightest;
 
   @media (min-width: $tablet-width) {
-    width: 380px;
-    margin-top: 15px;
+    width: 315px;
+    margin-top: 14px;
     margin-bottom: 51px;
     margin-left: -1px;
     padding: 0;
@@ -241,7 +241,7 @@
   &::before {
     content: "";
     position: absolute;
-    right: 0;
+    right: 35px;
     width: 24px;
     height: 11px;
     background-image: url("../../icons/stack.svg#icon-right-arrow-long");
@@ -268,6 +268,10 @@
     margin-left: -1px;
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      right: 4px;
+    }
 
     @media (min-width: $desktop-width) {
       padding-left: 3px;

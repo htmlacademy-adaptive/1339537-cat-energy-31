@@ -6,19 +6,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 19px 27px;
+  padding: 26px 18px 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 72px 59px 71px;
+    align-items: start;
+    padding: 62px 72px 61px 71px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 53%;
     z-index: 1;
-    width: 570px;
+    width: 566px;
     margin-top: 95px;
-    padding: 63px 86px 57px 79px;
+    padding: 61px 80px 59px;
     background-color: $basic-white;
   }
 }
@@ -57,18 +58,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 155px;
+    width: 157px;
     text-align: left;
   }
 }
 
-.contacts__address br {
-  @media (min-width: $mobile-width) {
-    display: none;
-  }
-
+.contacts__address-text {
   @media (min-width: $tablet-width) {
-    display: inline;
+    display: block;
+    margin-top: 17px;
   }
 }
 
@@ -82,22 +80,30 @@
   height: 362px;
   margin: 0;
   background-color: $grey-lightest;
-  background-image: image-set("../images/map-pin@1x.webp" 1x, "../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.jpg" 1x, "../images/map-pin@2x.jpg" 2x), image-set("../images/bg-map-mobile@1x.webp" 1x, "../images/bg-map-mobile@2x.webp" 2x, "../images/bg-map-mobile@1x.jpg" 1x, "../images/bg-map-mobile@2x.jpg" 2x);
+  background-image: image-set("../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.webp" 1x, "../images/map-pin@2x.jpg" 2x, "../images/map-pin@1x.jpg" 1x), image-set("../images/bg-map-mobile@2x.webp" 2x, "../images/bg-map-mobile@1x.webp" 1x, "../images/bg-map-mobile@1x.jpg" 1x, "../images/bg-map-mobile@2x.jpg" 2x);
   background-repeat: no-repeat, no-repeat;
-  background-size: 57px 53px, cover;
-  background-position: center, center;
+  background-size: 57px 53px, contain;
+  background-position: 50% 44%, center;
 
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 396px;
-    background-image: image-set("../images/map-pin@1x.webp" 1x, "../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.jpg" 1x, "../images/map-pin@2x.jpg" 2x), image-set("../images/bg-map-tablet@1x.webp" 1x, "../images/bg-map-tablet@2x.webp" 2x, "../images/bg-map-tablet@1x.jpg" 1x, "../images/bg-map-tablet@2x.jpg" 2x);
-    background-size: 113px 106px, cover;
+    background-image: image-set("../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.webp" 1x, "../images/map-pin@2x.jpg" 2x, "../images/map-pin@1x.jpg" 1x), image-set("../images/bg-map-tablet@2x.webp" 2x, "../images/bg-map-tablet@1x.webp" 1x, "../images/bg-map-tablet@2x.jpg" 2x, "../images/bg-map-tablet@1x.jpg" 1x);
+    background-size: 113px 106px, contain;
+    background-position: center, center;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     min-height: 400px;
-    background-image: image-set("../images/map-pin@1x.webp" 1x, "../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.jpg" 1x, "../images/map-pin@2x.jpg" 2x), image-set("../images/bg-map-desktop@1x.webp" 1x, "../images/bg-map-desktop@2x.webp" 2x, "../images/bg-map-desktop@1x.jpg" 1x, "../images/bg-map-desktop@2x.jpg" 2x);
-    background-position: 74% 65%, center;
+    background-image: image-set("../images/map-pin@2x.webp" 2x, "../images/map-pin@1x.webp" 1x, "../images/map-pin@1x.jpg" 1x, "../images/map-pin@2x.jpg" 2x), image-set("../images/bg-map-desktop@2x.webp" 2x, "../images/bg-map-desktop@1x.webp" 1x, "../images/bg-map-desktop@2x.jpg" 2x, "../images/bg-map-desktop@1x.jpg" 1x);
+    background-position: 67.5% 44%, center;
   }
+}
+
+.contacts__map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }

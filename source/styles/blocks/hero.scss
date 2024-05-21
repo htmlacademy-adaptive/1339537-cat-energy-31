@@ -2,15 +2,15 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 26px;
+  margin-bottom: 20px;
+  padding-top: 25px;
   padding-right: 20px;
-  margin-bottom: 21px;
   padding-left: 20px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: -3px;
     left: 0;
     z-index: -1;
     width: 320px;
@@ -24,9 +24,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 780px;
-    margin-bottom: 54px;
-    padding-top: 24px;
-    padding-left: 117px;
+    margin-bottom: 56px;
+    padding-top: 26px;
+    padding-left: 119px;
 
     &::before {
       display: none;
@@ -72,7 +72,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 414px;
+    width: 416px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -81,7 +81,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 414px;
     margin-top: -72px;
     margin-bottom: 40px;
   }
@@ -89,18 +88,16 @@
 
 .hero__text {
   font-family: $font-oswald;
-  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $mobile-width) {
-    margin: 0 auto;
-    margin-bottom: 28px;
-    font-size: 14px;
+    margin: 0 auto 28px;
     line-height: 14px;
     color: $basic-white;
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 290px;
     margin-top: -298px;
     margin-left: 0;
     margin-bottom: 64px;
@@ -121,8 +118,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    top: 225px;
-    left: 28px;
+    top: 227px;
+    left: 29px;
     height: 610px;
     width: auto;
   }
@@ -151,12 +148,12 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 254px;
-    width: auto;
-    left: 112px;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-right: 27px;
+    top: 256px;
+    left: 120px;
+    width: 244px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-right: 28px;
   }
 
   @media (min-width: $desktop-width) {

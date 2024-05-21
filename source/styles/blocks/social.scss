@@ -1,11 +1,25 @@
 .social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 130px;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px 0 13px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 5px 23px;
+    width: 136px;
+    margin: 0 auto 0 24px;
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 12px 0 13px;
+  }
 }
 
 .social__link {

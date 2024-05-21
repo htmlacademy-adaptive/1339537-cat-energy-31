@@ -19,10 +19,6 @@
   width: 60px;
   height: 60px;
   background-color: $basic-white;
-  // // background-image: url("../../icons/stack.svg#icon-close");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: contain;
   border: none;
   cursor: pointer;
 
@@ -30,13 +26,6 @@
     display: none;
   }
 }
-
-// .menu-nav__toggle--close {
-//   background-image: url("../../icons/stack.svg#icon-open");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: contain;
-// }
 
 .menu-nav__toggle--form-t {
   top: -8px;
@@ -61,7 +50,7 @@
     display: block;
   }
 }
-// .menu-nav--opened .menu-nav__toggle
+
 .menu-nav--opened .menu-nav__toggle {
   &::before,
   &::after {
@@ -83,9 +72,7 @@
 }
 
 .menu-nav__menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -97,6 +84,18 @@
   @media (min-width: $desktop-width) {
     width: 478px;
     margin-left: 508px;
+  }
+}
+
+.menu-nav__menu--form {
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    margin-top: 0;
   }
 }
 
@@ -116,7 +115,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  font-family: $font-oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -124,11 +123,12 @@
   border-bottom: 1px solid $grey-light;
 
   &:hover {
-    border: none;
+    border-bottom: 1px solid transparent;
     opacity: 0.6;
   }
 
   &:active {
+    border-bottom: 1px solid transparent;
     opacity: 0.3;
   }
 
@@ -137,7 +137,6 @@
     padding-bottom: 8px;
     border: none;
     font-size: 18px;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: initial;
   }
@@ -147,6 +146,14 @@
     padding-bottom: 10px;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+
+.menu-nav__link:nth-child(1n) {
+  border-top: 1px solid $grey-light;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
   }
 }
 

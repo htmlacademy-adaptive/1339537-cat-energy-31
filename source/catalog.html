@@ -91,7 +91,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-big-tablet@1x.webp 1x, images/chicken-big-tablet@2x.webp 2x">
               <source type="image/png" media="(min-width: 768px)" width="324" height="208" srcset="images/chicken-big-tablet@1x.png 1x, images/chicken-big-tablet@2x.png 2x">
               <source type="image/webp" srcset="images/chicken-big-mobile@1x.webp 1x, images/chicken-big-mobile@2x.webp 2x">
-              <img class="products__image products__image--chicken-big" src="images/chicken-big-mobile@1x.jpg" srcset="images/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1 килограмм">
+              <img class="products__image products__image--chicken-big" src="images/chicken-big-mobile@1x.jpg" srcset="images/chicken-big-mobile@2x.jpg 2x" width="140" height="160" alt="Cat Energy PRO 1 килограмм">
             </picture>
           </a>
           <div class="products__info">
@@ -355,13 +355,27 @@
       </div>
     </section>
 
+    <section class="promo">
+      <div class="container">
+        <h3 class="promo__heading">Акции и новинки</h3>
+        <p class="promo__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="promo__form" action="http://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="promo-email">Укажите ваш e-mail</label>
+          <input class="promo__form-input" type="email" name="promo__user-email" id="promo-email" placeholder="кuklachev@gmail.com" required>
+          <button class="promo__form-btn generic-button" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
+
     <section class="contacts">
       <div class="contacts__header container">
         <h3 class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__address-text">Санкт-Петербург</span>
+        </address>
       </div>
       <div class="contacts__map">
-        <div class="map" id="map"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1716039657492!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -396,6 +410,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

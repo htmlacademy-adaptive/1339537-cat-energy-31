@@ -1,8 +1,9 @@
 .generic-button {
   display: flex;
   justify-content: center;
-  padding: 12px 10px;
-  font-weight: 400;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: $font-oswald;
   color: $basic-white;
   text-transform: uppercase;

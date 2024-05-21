@@ -10,7 +10,6 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -28,7 +27,7 @@
         <button class="menu-nav__toggle menu-nav__toggle--form-t" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="menu-nav__wrapper">
-          <ul class="menu-nav__menu">
+          <ul class="menu-nav__menu menu-nav__menu--form">
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="index.html">Главная</a>
             </li>
@@ -88,7 +87,6 @@
             </li>
           </ul>
         </fieldset>
-
       </div>
 
       <div class="form__fieldset form__fieldset--bt">
@@ -97,19 +95,16 @@
 
           <ul class="form__list form__list--contacts">
             <li class="form__item form__item--icon-mail">
-              <label class="form__label form__label--email" for="form-email">E-mail:*</label>
-              <input class="form__input-text form__input-text--email" id="form-email" type="email" name="name" placeholder="kuklachev@gmail.com">
-              <svg class="form__icon-mail" width="17" height="13">
-                <use href="image/sprite.svg#icon-mail"></use>
-              </svg>
+              <label class="form__label form__label--email" for="form-email">E-mail:*
+                <input class="form__input-text form__input-text--email" id="form-email" type="email" name="name" placeholder="kuklachev@gmail.com">
+              </label>
+
             </li>
 
             <li class="form__item form__item--phone">
-              <label class="form__label form__label--phone" for="form-phone">Телефон:*</label>
-              <input class="form__input-text form__input-text--phone" id="form-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-              <svg class="form__icon-phone" width="20" height="20">
-                <use href="image/sprite.svg#icon-phone"></use>
-              </svg>
+              <label class="form__label form__label--phone" for="form-phone">Телефон:*
+                <input class="form__input-text form__input-text--phone" id="form-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -155,10 +150,14 @@
     <section class="contacts">
       <div class="contacts__header container">
         <h3 class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__address-text">Санкт-Петербург</span>
+        </address>
       </div>
       <div class="contacts__map">
-        <div class="map" id="map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1716039657492!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -193,8 +192,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- <script src="scripts/index.js"></script> -->
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

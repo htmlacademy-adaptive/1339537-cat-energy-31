@@ -1,16 +1,16 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $grey-light;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 30px;
-    padding-right: 30px;
     padding-left: 30px;
-    border: none;
+    padding-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   width: 235px;
-  min-height: 66px;
+  min-height: 67px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -55,16 +55,9 @@
 }
 
 .page-header__logo--form {
-  @media (min-width: $mobile-width) {
-    min-height: 57px;
-  }
+  min-height: 65px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
-  }
-
-
-  @media (min-width: $desktop-width) {
     padding-top: 0;
   }
 }
@@ -84,7 +77,7 @@
 }
 
 .page-header__logo-image--pb {
-  padding-bottom: 4px;
+  padding-bottom: 0;
 
   @media (min-width: $desktop-width) {
     margin-top: -3px;
