@@ -1,0 +1,142 @@
+.promo {
+  position: relative;
+  margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+
+    &::before {
+      width: 100%;
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+
+    &::before {
+      top: 18px;
+    }
+  }
+}
+
+.promo__heading {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 32px;
+  padding-right: 42px;
+  padding-bottom: 0;
+  padding-left: 19px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $font-oswald;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    grid-column: span 2;
+    margin-left: 30px;
+    margin-bottom: 68px;
+    padding-left: 37px;
+    padding-right: 36px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 70px;
+    padding-right: 35px;
+    padding-left: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.promo__text {
+  width: 280px;
+  margin: 0 auto 24px;
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 550px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.promo__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1.47fr 1fr;
+    width: 632px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1.93fr 1fr;
+    width: 754px;
+  }
+}
+
+.promo__form-input {
+  margin-bottom: 16px;
+  padding: 12px;
+  font-family: $font-oswald;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  text-align: left;
+  color: $basic-grey;
+  text-transform: uppercase;
+  border: 1px solid $grey-darker;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.promo__form-btn {
+  padding: 15px;
+  font-family: $font-oswald;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: $background-green;
+  }
+
+  &:active {
+    background-color: $background-green;
+    color: rgba($basic-white, 30%);
+  }
+}
