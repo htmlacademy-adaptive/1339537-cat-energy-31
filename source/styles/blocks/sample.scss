@@ -3,12 +3,12 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    background-image: linear-gradient($basic-white 57.3%, $grey-lighter 0);
+    background-image: linear-gradient($basic-white 619px, $grey-lighter 0);
     border-top: 1px solid $grey-light;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient($basic-white 26.5%, $grey-dark 0);
+    background-image: linear-gradient($basic-white 26.5%, $grey-lighter 0);
     border: none;
 
     &::before {

@@ -23,10 +23,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 8.5px;
+    padding-bottom: 9px;
   }
 }
 
 .characteristic-table__cell:nth-child(2n) {
   text-align: right;
+}
+
+.characteristic-table__cell--price {
+  margin-right: 2px;
 }

@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     right: 0;
     z-index: -1;
     width: 50%;
@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      top: 17px;
+      top: 16px;
     }
   }
 }
@@ -35,7 +35,7 @@
   margin: 0 0 34px;
   padding-right: 41px;
   padding-bottom: 0;
-  padding-left: 19px;
+  padding-left: 20px;
   font-size: 24px;
   line-height: 24px;
   font-family: $font-oswald;
@@ -44,10 +44,10 @@
   @media (min-width: $tablet-width) {
     top: -8px;
     grid-column: span 2;
-    margin-left: 33px;
-    margin-bottom: 80px;
-    padding-left: 37px;
-    padding-right: 36px;
+    margin-bottom: 81px;
+    margin-left: 30px;
+    padding-left: 41px;
+    padding-right: 39px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -55,7 +55,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 79px;
     margin-left: 70px;
-    padding-right: 35px;
+    padding-right: 40px;
     padding-left: 40px;
     font-size: 40px;
     line-height: 40px;
@@ -68,7 +68,7 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 70px;
+    row-gap: 71px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -102,10 +102,9 @@
 .additional-products__item {
   width: 280px;
   margin: 0;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 18px;
   border-top: 1px solid $grey-darker;
-  border-bottom: 1px solid $grey-darker;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -113,7 +112,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 708px;
-    padding: 26px 37px;
+    padding: 20px 37px 27px;
     font-size: 16px;
     line-height: 20px;
     border: 1px solid $grey-darker;
@@ -123,47 +122,62 @@
     justify-content: space-between;
     align-items: baseline;
     width: auto;
-    padding: 16px 0 13px;
+    padding: 10px 0 9px;
     border: none;
     border-top: 1px solid $grey-darker;
     border-bottom: 1px solid $grey-darker;
   }
 }
 
-.additional-products__item--water {
-  padding-top: 12px;
-  padding-bottom: 17px;
+.additional-products__item--milk {
+  padding-top: 14px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 26px;
+    padding: 20px 37px 27px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -1px;
-    margin-bottom: -1px;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding: 10px 0 13px;
   }
+}
+
+.additional-products__item--water {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 37px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 13px;
+  }
+  // @media (min-width: $desktop-width) {
+  //   margin-top: -1px;
+  //   margin-bottom: -1px;
+  //   padding-top: 14px;
+  //   padding-bottom: 13px;
+  // }
 }
 
 .additional-products__item--vitamins {
   margin-top: -1px;
+  padding-top: 14px;
   padding-bottom: 19px;
+  border-bottom: 1px solid $grey-darker;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 26px;
+    padding: 20px 37px 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding: 10px 0 13px;
   }
 }
 
 .additional-products__title {
-  margin: 0;
-  margin-bottom: 13px;
+  margin: 0 0 11px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -174,7 +188,6 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin: 0;
-    margin-right: auto;
     font-size: 20px;
     line-height: 20px;
   }
@@ -184,7 +197,7 @@
   border-spacing: 2px;
 
   @media (min-width: $desktop-width) {
-    margin-right: 35px;
+    margin-right: 39px;
   }
 }
 
@@ -209,6 +222,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin-top: 6px;
   }
 }
 
@@ -232,12 +246,13 @@
 }
 
 .additional-products__price {
+  padding: 0 0 0 3px;
   line-height: 14px;
   color: $basic-grey;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 95px;
+    width: 91px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -248,10 +263,22 @@
   }
 }
 
+.additional-products__price--pd {
+  padding: 0 3px;
+}
+
+.additional-products__price--dec {
+  @media (min-width: $desktop-width) {
+    width: 84px;
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
+
 .additional-products__button {
   display: block;
   width: 280px;
-  margin: 10px auto 0;
+  margin: 13px auto 0;
   padding: 11px 44px;
   font-weight: 400;
   font-size: 16px;
@@ -282,8 +309,28 @@
   }
 }
 
+.additional-products__button--water {
+  margin: 14px auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
+
 .additional-products__button--milk {
   margin-bottom: -1px;
+}
+
+.additional-products__button--vitamins {
+  margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .additional-products__stock {
@@ -316,14 +363,15 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
-    width: 708px;
+    width: 707px;
     min-height: 200px;
     padding-top: 0;
     padding-left: 86px;
-    padding-right: 123px;
+    padding-right: 125px;
     background-image: image-set("../images/gift-photo-tablet@1x.webp" 1x, "../images/gift-photo-tablet@2x.webp" 2x, "../images/gift-photo-tablet@1x.jpg" 1x, "../images/gift-photo-tablet@2x.jpg" 2x);
 
     &::before {
+      top: 56px;
       left: 11%;
     }
   }

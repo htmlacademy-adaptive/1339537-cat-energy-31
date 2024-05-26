@@ -28,23 +28,6 @@
   }
 }
 
-.page-main__header--catalog {
-  margin-bottom: 40px;
-  padding-top: 26px;
-  padding-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
-    padding-left: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 35px;
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-}
-
 .page-main__header--form {
   margin-left: auto;
   margin-bottom: 37px;

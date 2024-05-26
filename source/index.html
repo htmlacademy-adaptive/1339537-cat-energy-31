@@ -15,12 +15,12 @@
 <body class="page__body">
 
   <div class="container">
-    <header class="page-header page-header--position container">
+    <header class="page-header page-header--position container" data-test="header">
       <a class="page-header__logo" href="#" aria-label="Главная страница интернет-магазина Cat Energy">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" alt="Кэт энерджи" width="190" height="38">
+          <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" width="189" height="37" loading="lozy" alt="Кэт энерджи">
         </picture>
       </a>
 
@@ -49,21 +49,22 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин функционального питания для котов "Cat Energy"</h1>
 
-    <section class="hero container">
-      <h2 class="hero__heading">Функциональное питание для котов</h2>
-      <p class="hero__text">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-cat-desktop@1x.webp 1x, images/index-cat-desktop@2x.webp 2x">
-        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-cat-desktop@1x.png 1x, images/index-cat-desktop@2x.png 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="images/index-cat-tablet@1x.webp 1x, images/index-cat-tablet@2x.webp 2x">
-        <source type="image/jpg" media="(min-width: 768px)" srcset="images/index-cat-tablet@1x.jpg 1x, images/index-cat-tablet@2x.jpg 2x">
-        <source type="image/webp" srcset="images/index-cat-mobile@1x.webp 1x, images/index-cat-mobile@2x.webp 2x">
-        <img class="hero__image" src="images/index-cat-mobile@1x.png" srcset="images/index-cat-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy курица">
-      </picture>
-      <a class="hero__button generic-button" href="form.html">Подобрать программу</a>
+    <section class="hero" data-test="hero">
+      <div class="hero__wrap container">
+        <h2 class="hero__heading">Функциональное питание для котов</h2>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/index-cat-desktop@1x.webp 1x, images/index-cat-desktop@2x.webp 2x">
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/index-cat-desktop@1x.png 1x, images/index-cat-desktop@2x.png 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/index-cat-tablet@1x.webp 1x, images/index-cat-tablet@2x.webp 2x">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="images/index-cat-tablet@1x.jpg 1x, images/index-cat-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="images/index-cat-mobile@1x.webp 1x, images/index-cat-mobile@2x.webp 2x">
+          <img class="hero__image" src="images/index-cat-mobile@1x.png" srcset="images/index-cat-mobile@2x.png 2x" width="280" height="271" loading="lozy" alt="Cat Energy курица">
+        </picture>
+        <a class="hero__button generic-button" href="form.html">Подобрать программу</a>
+      </div>
     </section>
-
-    <section class="services container">
+    <section class="services container" data-test="programs">
       <h2 class="visually-hidden">Преимущества нашей компании</h2>
 
       <article class="services__item">
@@ -83,8 +84,7 @@
       </article>
 
     </section>
-
-    <section class="advantages container">
+    <section class="advantages container" data-test="features">
       <h2 class="advantages__heading">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--leaf">
@@ -107,7 +107,7 @@
       </ul>
     </section>
 
-    <section class="sample">
+    <section class="sample" data-test="proof">
       <div class="sample__wrapper container">
         <div class="sample__info">
           <h2 class="sample__heading">Живой пример</h2>
@@ -134,7 +134,7 @@
                 <source type="image/webp" media="(min-width: 768px)" width="1380" height="1034" srcset="images/cat-before-tablet-desktop@1x.webp 1x, images/cat-before-tablet-desktop@2x.webp 2x">
                 <source type="image/png" media="(min-width: 768px)" width="1380" height="1034" srcset="images/cat-before-tablet-desktop@1x.png 1x, images/cat-before-tablet-desktop@2x.png 2x">
                 <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x">
-                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="320" height="240" alt="Кот до прохождения программы похудения">
+                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="320" height="240" loading="lozy" alt="Кот до прохождения программы похудения">
               </picture>
             </div>
             <button class="sample__slider-button" type="button">
@@ -145,7 +145,7 @@
                 <source type="image/webp" media="(min-width: 768px)" width="1380" height="1034" srcset="images/cat-after-tablet-desktop@1x.webp 1x, images/cat-after-tablet-desktop@2x.webp 2x">
                 <source type="image/png" media="(min-width: 768px)" width="1380" height="1034" srcset="images/cat-after-tablet-desktop@1x.png 1x, images/cat-after-tablet-desktop@2x.png 2x">
                 <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x">
-                <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="320" height="240" alt="Кот после прохождения программы похудения">
+                <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="320" height="240" loading="lozy" alt="Кот после прохождения программы похудения">
               </picture>
             </div>
           </div>
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__header container">
         <h3 class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
@@ -162,16 +162,16 @@
       </div>
       <div class="contacts__map-wrapper">
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1716039657492!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1716039657492!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo" href="#" aria-current="page">
-        <img class="logo__text" src="images/logo-cat-energy.svg" width="128" height="25" alt="Логотип компании Cat Energy">
+        <img class="logo__text" src="images/logo-cat-energy.svg" width="128" height="25" loading="lozy" alt="Логотип компании Cat Energy">
       </a>
 
       <div class="page-footer__social">
