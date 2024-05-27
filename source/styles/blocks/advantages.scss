@@ -1,17 +1,20 @@
 .advantages {
   display: grid;
   margin-bottom: 48px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 21px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 6px;
+    padding-top: 45px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-top: 71px;
     padding-left: 110px;
     padding-right: 110px;
   }

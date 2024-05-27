@@ -14,6 +14,31 @@
   }
 }
 
+.products__header {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $font-oswald;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    padding-left: 0;
+    padding-right: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    margin-bottom: 52px;
+    padding-right: 110px;
+  }
+}
+
 .products__list {
   display: grid;
   grid-template-columns: 1fr;
@@ -25,12 +50,13 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 53px 60px;
+    gap: 38px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 64px 80px;
+    justify-items: normal;
+    gap: 65px 80px;
   }
 }
 
@@ -39,9 +65,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  padding-right: 20px;
-  padding-bottom: 22px;
-  padding-left: 19px;
+  padding: 20px 20px 24px 19px;
   border-top: 1px solid $border-grey-light;
 
   @media (min-width: $tablet-width) {
@@ -50,7 +74,7 @@
     justify-content: center;
     align-self: center;
     padding: 229px 37px 39px 39px;
-    background-image: linear-gradient($basic-white 19%, $grey-dark 0);
+    background-image: linear-gradient($basic-white 20.9%, $grey-dark 0);
     border-top: none;
   }
 
@@ -61,11 +85,11 @@
 
 .products__item--bi {
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($basic-white 17%, $grey-dark 0);
+    background-image: linear-gradient($basic-white 19.5%, $grey-dark 0);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient($basic-white 19%, $grey-dark 0);
+    background-image: linear-gradient($basic-white 20.8%, $grey-dark 0);
   }
 }
 
@@ -77,12 +101,14 @@
 }
 
 .products__image {
-  margin-bottom: -3px;
+  width: max-content;
+  margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: -3px;
-    width: 324px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
     height: auto;
     bottom: 310px;
   }
@@ -90,6 +116,17 @@
   @media (min-width: $desktop-width) {
     top: 47px;
     width: auto;
+  }
+}
+
+.products__image--chicken-small {
+  @media (min-width: $tablet-width) {
+    left: 49.3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 61px;
+    left: 48.7%;
   }
 }
 
@@ -111,83 +148,75 @@
   }
 }
 
+.products__info--buckwheat-big {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
 .products__image--chicken-big {
   @media (min-width: $tablet-width) {
-    top: 30px;
-    left: -3px;
+    top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 32px;
-    left: -1px;
+    top: 44px;
   }
 }
 
 .products__image--fish-small {
-  padding-top: 7px;
-  padding-left: 7px;
-  padding-right: 6px;
-
   @media (min-width: $tablet-width) {
     top: 35px;
-    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: 45px;
-    left: -2px;
+    top: 43px;
   }
 }
 
 .products__image--fish-big {
   @media (min-width: $tablet-width) {
-    top: 21px;
-    left: -3px;
+    top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 43px;
   }
 }
 
 .products__image--buckwheat-small {
-  padding: 7px 6px 0 7px;
-
   @media (min-width: $tablet-width) {
-    padding: 0;
-    top: 36px;
+    top: 32.5px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 24px;
-    left: -1px;
+    top: 7px;
   }
 }
 
 .products__image--buckwheat-big {
   @media (min-width: $tablet-width) {
-    top: 18px;
+    top: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 9px;
+    top: 6px;
   }
 }
 
 .products__image--rice-small {
-  padding: 3px 2px 0 4px;
-
   @media (min-width: $tablet-width) {
-    padding: 0;
     top: 35px;
-    left: -3px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 25px;
-    left: -2px;
+    top: 6px;
   }
 }
 
 .products__heading {
   width: 80px;
-  margin: 0 0 14px;
+  margin: -6px 0 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -198,74 +227,72 @@
 
   @media (min-width: $tablet-width) {
     width: 154px;
-    margin: 31px auto 13px;
+    margin: 45px auto 13px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 34px auto 16px;
+    margin: 48px auto 16px 4px;
   }
 }
 
 .products__heading--chicken-big {
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
+    margin-left: 44px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
+    margin-left: 4px;
   }
 }
 
 .products__heading--fish-small {
-  margin-top: 10px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin: 36px auto 14px 44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 34px;
+    margin: 48px auto 17px 4px;
   }
 }
 
 .products__heading--fish-big {
-  margin-top: 3px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 19px;
+    margin-top: 36px;
+    margin-left: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 31px;
+    margin: 48px auto 16px 4px;
   }
 }
 
 .products__heading--buckwheat-small {
-  margin-top: 11px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 21px;
+    margin: 35px auto 13px 44px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 8px;
     margin-bottom: 17px;
+    margin-left: 4px;
   }
 }
 
 .products__heading--buckwheat-big {
-  margin-top: 5px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 21px;
+    margin-top: 36px;
+    margin-left: 44px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 6px;
     margin-bottom: 17px;
+    margin-left: 4px;
   }
 }
 
@@ -283,14 +310,14 @@
 }
 
 .products__heading--rice-small {
-  margin-top: 9px;
-
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
+    margin: 36px auto 13px 44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-bottom: 15px;
   }
 }
 
@@ -298,6 +325,7 @@
   grid-column: span 2;
   width: 280px;
   min-height: 40px;
+  margin-top: 15px;
   padding: 10px 109px;
   font-style: normal;
   font-weight: 400;
@@ -320,7 +348,8 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    min-height: 39px;
+    min-height: 40px;
+    margin-top: -1px;
     padding: 9px 93px;
     font-size: 16px;
   }
@@ -332,7 +361,7 @@
 }
 
 .products__button--chicken-big {
-  margin-top: 1px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -340,55 +369,23 @@
 }
 
 .products__button--fish-big {
-  margin-top: 1px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-  }
-}
-
-.products__button--fish-small {
-  margin-top: 8px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-}
-
-.products__button--buckwheat-small {
-  margin-top: 8px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -1px;
-  }
-}
-
-.products__button--rice-small {
-  margin-top: 6px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -1px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 2px;
   }
 }
 
 .products__button--buckwheat-big {
-  margin-top: 1px;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-  }
+  margin-top: 14px;
 }
 
 .products__item--all {
-  padding-top: 80px;
+  padding-top: 84px;
   padding-bottom: 24px;
   border-bottom: 1px solid $border-grey-light;
   background-image: url("../../icons/stack.svg#icon-plus");
-  background-position: top 15% center;
+  background-position: top 14% center;
   background-repeat: no-repeat;
   background-size: 30px 30px;
 
@@ -398,17 +395,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 86px;
-    padding: 166px 37px 38px 38px;
-    background-position: top 13% center;
+    margin-top: 102px;
+    padding: 160px 37px 38px 38px;
+    background-position: top 14% center;
     background-size: 60px 60px;
     outline: 2px solid $grey-dark;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
-    padding: 146px 37px 38px 38px;
+    margin-top: 72px;
+    padding: 150px 37px 38px 38px;
   }
 }
 
@@ -441,7 +438,7 @@
   @media (min-width: $tablet-width) {
     width: 141px;
     margin: auto;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -453,7 +450,7 @@
 
 .products__text--all {
   grid-column: span 2;
-  margin-bottom: 21px;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 16px;
   text-align: center;

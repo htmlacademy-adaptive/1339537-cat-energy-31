@@ -14,12 +14,12 @@
 
 <body class="page__body">
   <div class="container">
-    <header class="page-header container">
+    <header class="page-header container" data-test="header">
       <a class="page-header__logo page-header__logo--form" href="index.html" aria-label="Главная страница интернет-магазина Cat Energy">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" alt="Кэт энерджи" width="192" height="38">
+          <img class="page-header__logo-image page-header__logo-image--pb" src="images/logo-mobile.svg" width="189" height="37" loading="lazy" alt="Кэт энерджи">
         </picture>
       </a>
 
@@ -147,7 +147,7 @@
       </div>
     </form>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__header container">
         <h3 class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
@@ -162,10 +162,10 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo" href="#" aria-current="page">
-        <img class="logo__text" src="images/logo-cat-energy.svg" width="128" height="25" alt="Логотип компании Cat Energy">
+        <img class="logo__text" src="images/logo-cat-energy.svg" width="128" height="25" loading="lazy" alt="Логотип компании Cat Energy">
       </a>
 
       <ul class="page-footer__social social">

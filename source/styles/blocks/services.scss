@@ -2,13 +2,11 @@
   display: grid;
   grid-template-rows: 1fr;
   row-gap: 22px;
-  margin-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     row-gap: 30px;
-    margin-bottom: 45px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -16,8 +14,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-top: -2px;
-    margin-bottom: 71px;
+    margin-top: -87px;
+    padding-top: 80px;
     padding-right: 110px;
     padding-left: 110px;
   }
@@ -191,7 +189,7 @@
 .services__description {
   position: relative;
   margin-bottom: 20px;
-  padding: 0 0 21px;
+  padding: 0 0 22px;
   color: $basic-grey;
   width: 240px;
   line-height: 18px;
