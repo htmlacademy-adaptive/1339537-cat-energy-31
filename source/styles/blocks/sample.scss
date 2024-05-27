@@ -368,7 +368,7 @@
     left: 50%;
     width: 24px;
     height: 18px;
-    background-color: #666666;
+    background-color: $svg-basic-grey;
     mask-image: url("../../icons/stack.svg#icon-slider-arrows");
     transform: translate(-50%, 50%);
   }
