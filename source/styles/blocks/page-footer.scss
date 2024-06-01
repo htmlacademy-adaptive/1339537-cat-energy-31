@@ -55,6 +55,12 @@
   }
 }
 
+.page-footer__social--padding {
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
+}
+
 .page-footer__copyright-link {
   display: flex;
   flex-direction: row;
