@@ -14,8 +14,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    margin-top: -87px;
-    padding-top: 80px;
+    padding-top: 7px;
     padding-right: 110px;
     padding-left: 110px;
   }
@@ -239,18 +238,18 @@
   &::before {
     content: "";
     position: absolute;
-    right: 35px;
+    right: 0;
     width: 24px;
     height: 11px;
     background-image: url("../../icons/stack.svg#icon-right-arrow-long");
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: contain;
+    background-size: 32px auto;
   }
 
   &:hover {
     &::before {
-      width: 32px;
+      background-size: 24px auto;
     }
   }
 
@@ -258,7 +257,7 @@
     opacity: 0.3;
 
     &::before {
-      width: 32px;
+      background-size: 24px auto;
     }
   }
 
@@ -266,10 +265,6 @@
     margin-left: -1px;
     font-size: 20px;
     line-height: 30px;
-
-    &::before {
-      right: 4px;
-    }
 
     @media (min-width: $desktop-width) {
       padding-left: 3px;
