@@ -238,7 +238,7 @@
   &::before {
     content: "";
     position: absolute;
-    right: 0;
+    right: 37px;
     width: 24px;
     height: 11px;
     background-image: url("../../icons/stack.svg#icon-right-arrow-long");
@@ -266,8 +266,12 @@
     font-size: 20px;
     line-height: 30px;
 
-    @media (min-width: $desktop-width) {
-      padding-left: 3px;
+    &::before {
+      right: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
   }
 }
